@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    container_name: web_service
+    build: .
+    ports: 
+      - "3000:3000"
+    links:
+      - mongo
+    env_file: .env
+    environment:
+      - PORT=$PORT
+      - MONGO_URL=$MONGO_URL
+      - MONGO_DB=$MONGO_DB
+      - JWT_SECRET=$JWT_SECRET
+      - WEATHER_URL=$WEATHER_URL
+  mongo:
+    container_name: db_service
+    image: mongo
+    ports:
+      - "27017:27017"

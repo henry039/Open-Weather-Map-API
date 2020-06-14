@@ -1,0 +1,21 @@
+POST http://192.168.99.100:3000/user/signup
+Content-Type: application/json
+
+{
+    "name" : "Terry",
+    "password" : "123455"
+}
+
+###
+POST http://192.168.99.100:3000/user/login
+Content-Type: application/json
+
+{
+    "name" : "Terry",
+    "password" : "123455"
+}
+
+###
+GET http://192.168.99.100:3000/weather/getInfo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVycnkiLCJpYXQiOjE1OTIxNDgzNDQsImV4cCI6MTU5MjE0ODQ2NH0.lsfWoLruM0Iq_xprj1mdHSDrWGyjxKiUTPCpYu5XYeI

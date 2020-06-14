@@ -1,0 +1,21 @@
+POST http://localhost:3000/user/signUp
+Content-Type: application/json
+
+{
+    "name" : "Terry",
+    "password" : "123455"
+}
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "name" : "Terry",
+    "password" : "123455"
+}
+
+###
+GET http://localhost:3000/weather/getInfo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGVycnkiLCJpYXQiOjE1OTIxMjkwMDMsImV4cCI6MTU5MjEyOTEyM30.OfPaQxsZ2GzsOMBhprLXabYrdA3DWJa2_mFORdrb4ik
