@@ -31,4 +31,5 @@ e.g by providing the valid jwt to retrieve the lastest info of 'HK' weather
 - [NodeJS](https://nodejs.org/) - Javascript runtime environment
 - [Express](https://expressjs.com/) - NodeJS web framework
 - [JWT](https://jwt.io/) - JSON Web Token library
-- [OpenWeatherAPI](https://openweathermap.org/) - Data APII
+- [OpenWeatherAPI](https://openweathermap.org/) - Data API
+- [Jest](https://jestjs.io/) - JavaScript Testing Framework
