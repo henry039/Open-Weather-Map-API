@@ -17,15 +17,14 @@ Built with Typescrip, NodeJS, Express, JWT, MongoDB, Docker
 
 # Usage
 - POST `http://localhost:3000/user/signUp` 
-e.g create user named `Terry` & password `123455`
-`curl -d '{"name":"Terry", "password":"123455"}' -H "Content-Type: application/json" -X POST http://localhost:3000/user/signUp`
+  e.g create user named `Terry` & password `123455`
+  `curl -d '{"name":"Terry", "password":"123455"}' -H "Content-Type: application/json" -X POST http://localhost:3000/user/signUp`
 - POST `http://localhost:3000/user/login` 
-e.g login user 
-`curl -d '{"name":"Terry", "password":"123455"}' -H "Content-Type: application/json" -X POST http://localhost:3000/user/login`
-to get the access token 
+  e.g login user to get the access token
+  `curl -d '{"name":"Terry", "password":"123455"}' -H "Content-Type: application/json" -X POST http://localhost:3000/user/login`
 - GET `http://localhost:3000/weather/getInfo` 
-e.g by providing the valid jwt to retrieve the lastest info of 'HK' weather
-`curl -H 'Accept: application/json' -H "Authorization: Bearer ${TOKEN}"  GET http://localhost:3000/weather/getInfo`
+  e.g by providing the valid jwt to retrieve the lastest info of 'HK' weather
+  `curl -H 'Accept: application/json' -H "Authorization: Bearer ${TOKEN}"  GET http://localhost:3000/weather/getInfo`
 
 # Dependencies
 - [NodeJS](https://nodejs.org/) - Javascript runtime environment
